@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Star Wars</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./animation.css" />
+
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <main>
+
+    <div class="wrapper">
+        <div class="text">
+            <img data-active="1"  src="./assets/Logos/Logo-1.svg"></img>
+            <img data-active="2" class="hidden" src="./assets/Logos/Logo-2.svg">
+            <img data-active="3" class="hidden" src="./assets/Logos/Logo-3.svg">
+            <h1 data-active="1" class="title ">Un nouvel espoir</h1>
+            <h1 data-active="2" class="title hidden">L'empire contre attaque</h1>
+            <h1 data-active="3" class="title hidden">Le Retour du Jedi</h1>
+
+
+            <p data-active="1" class="description">C'est le premier opus de la saga Star Wars par sa date de sortie, mais le quatrième selon l'ordre chronologique de l'histoire.</p>
+            <p data-active="2" class="description hidden">La guerre entre le maléfique Empire galactique et son antagoniste, l’Alliance rebelle, bat son plein.</p>
+            <p data-active="3" class="description hidden">Le maléfique Empire galactique construit une nouvelle station spatiale Étoile de la mort pour anéantir définitivement l'Alliance rebelle.</p>
+
+        </div>
+        <div class="posterBox">
+            <img data-active="1"src="./assets/Posters/newHope.jpg"  id="id-film-1" class="poster">
+            <img data-active="2"src="./assets/Posters/empireStrikeBack.jpg" id="id-film-2" class="poster hidden hiddenPoster">
+            <img data-active="3"src="./assets/Posters/ReturnOfTheJedi.jpeg" id="id-film-3" class="poster hidden hiddenPoster"> 
+
+
+        </div>
+        <div class="yearBox">
+        <img src="assets/Numbers/19.svg"></img>
+        <img data-active="1" src="assets/Numbers/77.svg" ></img>
+        <img data-active="2" src="assets/Numbers/8.svg" class="hidden">
+        <img data-active="3" src="assets/Numbers/8.svg" class="hidden">
+        <img data-active="2" src="assets/Numbers/0.svg" class="hidden">
+        <img data-active="3" src="assets/Numbers/3.svg" class="hidden">
+
+        </div>
+        <div class="footerBox">
+            <div>
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" id="previousArrow" class="navigationArrow disabledArrow">
+                <g id="Arriow &#60;-">
+                <g id="Group">
+                <path id="Vector" fill-rule="evenodd" clip-rule="evenodd" d="M37.5 20C37.5 20.3315 37.3683 20.6495 37.1339 20.8839C36.8995 21.1183 36.5815 21.25 36.25 21.25L6.7675 21.25L14.635 29.115C14.8697 29.3497 15.0016 29.6681 15.0016 30C15.0016 30.3319 14.8697 30.6503 14.635 30.885C14.4003 31.1197 14.0819 31.2516 13.75 31.2516C13.4181 31.2516 13.0997 31.1197 12.865 30.885L2.865 20.885C2.74859 20.7689 2.65623 20.6309 2.59322 20.4791C2.5302 20.3272 2.49776 20.1644 2.49776 20C2.49776 19.8356 2.5302 19.6728 2.59322 19.5209C2.65623 19.369 2.74859 19.2311 2.865 19.115L12.865 9.11499C13.0997 8.88027 13.4181 8.74841 13.75 8.74841C14.0819 8.74841 14.4003 8.88027 14.635 9.11499C14.8697 9.34971 15.0016 9.66805 15.0016 9.99999C15.0016 10.3319 14.8697 10.6503 14.635 10.885L6.7675 18.75L36.25 18.75C36.5815 18.75 36.8995 18.8817 37.1339 19.1161C37.3683 19.3505 37.5 19.6685 37.5 20Z"/>
+                </g>
+                </g>
+                </svg>
+                
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" id="nextArrow" class="navigationArrow enableArrow">
+                  <g id="Arrow -&#62;">
+                  <g id="Group">
+                  <path id="Vector" fill-rule="evenodd" clip-rule="evenodd" d="M2.5 20C2.5 19.6685 2.6317 19.3505 2.86612 19.1161C3.10054 18.8817 3.41848 18.75 3.75 18.75L33.2325 18.75L25.365 10.885C25.1303 10.6503 24.9984 10.3319 24.9984 10C24.9984 9.66807 25.1303 9.34972 25.365 9.11501C25.5997 8.88029 25.9181 8.74843 26.25 8.74843C26.5819 8.74843 26.9003 8.88029 27.135 9.11501L37.135 19.115C37.2514 19.2311 37.3438 19.3691 37.4068 19.5209C37.4698 19.6728 37.5022 19.8356 37.5022 20C37.5022 20.1644 37.4698 20.3272 37.4068 20.4791C37.3438 20.631 37.2514 20.7689 37.135 20.885L27.135 30.885C26.9003 31.1197 26.5819 31.2516 26.25 31.2516C25.9181 31.2516 25.5997 31.1197 25.365 30.885C25.1303 30.6503 24.9984 30.3319 24.9984 30C24.9984 29.6681 25.1303 29.3497 25.365 29.115L33.2325 21.25L3.75 21.25C3.41848 21.25 3.10054 21.1183 2.86612 20.8839C2.6317 20.6495 2.5 20.3315 2.5 20Z"/>
+                  </g>
+                  </g>
+                  </svg>
+            </div>
+            <ul class="step-wizard-list">
+              <li class="step-wizard-item progressAfter"id="li-film-1" >
+                  <span class="progress-count eltPassed"id="film-1">1</span>
+              </li>
+              <li class="step-wizard-item progressAfter" id="li-film-2">
+                  <span class="progress-count eltAfter" id="film-2">2</span>
+              </li>
+              <li class="step-wizard-item progressAfter" id="li-film-3">
+                  <span class="progress-count eltAfter" id="film-3">3</span>
+              </li>
+              <li class="step-wizard-item progressAfter" id="li-film-4">
+                  <span class="progress-count eltAfter" id="film-4">4</span>
+              </li>
+              <li class="step-wizard-item" id="li-film-5" >
+                <span class="progress-count eltAfter"id="film-5">5</span>
+              </li>
+          </ul>
+        </div>
+    </div>
+
+
+    </div>
+    <script src="index.js"></script>
+
+  </main>
+
+  </body>
+
+</html>

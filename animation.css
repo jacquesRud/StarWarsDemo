@@ -1,0 +1,129 @@
+.hideAnimationPrevious {
+  animation: hideItemPrevious var(--animation-length) normal;
+}
+.hideAnimationNext {
+  animation: hideItemNext var(--animation-length) normal;
+}
+.showNextAnimation {
+  animation: showNextItem var(--animation-length) normal;
+}
+.showPreviousAnimation {
+  animation: showPreviousItem var(--animation-length) normal;
+}
+
+.enableArrowAnimation {
+  animation: enableArrow var(--animation-length) normal;
+}
+
+.disableArrowAnimation {
+  animation: disableArrow var(--animation-length) normal;
+}
+
+.advanceProgressBarAnimation {
+  animation: advanceProgressBar var(--animation-length) normal;
+}
+
+.reduceProgressBarAnimation {
+  animation: reduceProgressBar var(--animation-length) normal;
+}
+
+@keyframes showNextItem {
+  0% {
+    transform: translateX(200px);
+    opacity: 0%;
+  }
+}
+@keyframes showPreviousItem {
+  0% {
+    transform: translateX(-200px);
+    opacity: 0%;
+  }
+}
+@keyframes hideItem {
+  100% {
+    display: none;
+    transform: translateX(200px);
+  }
+}
+
+@keyframes hideItemPrevious {
+  0% {
+    opacity: 100%;
+    position: absolute;
+  }
+  100% {
+    opacity: 0%;
+    transform: translateX(-200px);
+    position: absolute;
+  }
+}
+@keyframes hideItemNext {
+  0% {
+    opacity: 100%;
+    position: absolute;
+  }
+  100% {
+    opacity: 0%;
+    transform: translateX(200px);
+    position: absolute;
+  }
+}
+
+@keyframes progressBarInc {
+  0% {
+    background-color: var(--main-font-yellow-disabled);
+  }
+  100% {
+    background-color: var(--main-font-yellow);
+  }
+}
+
+@keyframes progressBarRed {
+  0% {
+    background-color: var(--main-font-yellow);
+  }
+  100% {
+    background-color: var(--main-font-yellow-disabled);
+  }
+}
+
+@keyframes enableArrow {
+  0% {
+    fill: var(--main-font-yellow-disabled);
+  }
+  100% {
+    fill: var(--main-font-yellow);
+  }
+}
+
+@keyframes disableArrow {
+  0% {
+    fill: var(--main-font-yellow);
+  }
+  100% {
+    fill: var(--main-font-yellow-disabled);
+  }
+}
+
+@keyframes advanceProgressBar {
+  0% {
+    background-position: left;
+    background-color: var(--main-font-yellow-disabled);
+  }
+  100% {
+    background-position: right;
+
+    background-color: var(--main-font-yellow);
+  }
+}
+
+@keyframes reduceProgressBar {
+  0% {
+    background-position: right;
+    background-color: var(--main-font-yellow);
+  }
+  100% {
+    background-position: left;
+    background-color: var(--main-font-yellow-disabled);
+  }
+}
